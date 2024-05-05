@@ -13,7 +13,7 @@ import {
     Validators,
     ReactiveFormsModule,
   } from '@angular/forms';
-  import { CommonModule, formatDate } from '@angular/common';
+  import { CommonModule } from '@angular/common';
   import { RouterModule } from '@angular/router';
   import { StudentService } from '../../services/student.service';
   import { ToastrService } from 'ngx-toastr';
@@ -39,8 +39,6 @@ import {
         name: new FormControl('', [Validators.required]),
         email: new FormControl('', [Validators.required, Validators.email]),
         mobile: new FormControl('', [Validators.required]),
-        dob: new FormControl('', [Validators.required]),
-        doj: new FormControl('', [Validators.required]),
       });
     }
   

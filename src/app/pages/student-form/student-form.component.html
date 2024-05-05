@@ -21,20 +21,7 @@
     <div class="form-error">Mobile is required</div>
     }
   </div>
-  <div class="mb-5">
-    <label for="dob" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of Birth</label>
-    <input type="date" id="dob" class="form-control" placeholder="" formControlName="dob">
-    @if (studentForm.get('dob')?.hasError('required') && studentForm.get('dob')?.touched) {
-    <div class="form-error">Date of Birth is required</div>
-    }
-  </div>
-  <div class="mb-5">
-    <label for="doj" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of Joining</label>
-    <input type="date" id="doj" class="form-control" placeholder="" formControlName="doj">
-    @if (studentForm.get('doj')?.hasError('required') && studentForm.get('doj')?.touched) {
-    <div class="form-error">Date of Joining is required</div>
-    }
-  </div>
+
   <button type="submit"
     class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
   <button type="button" (click)="onClose()"

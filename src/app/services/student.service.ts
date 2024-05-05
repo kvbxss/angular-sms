@@ -7,7 +7,7 @@ import { ApiResponse, IStudent } from '../pages/shared/models/Student';
   providedIn: 'root',
 })
 export class StudentService {
-  apiurl = 'http://localhost:8085/';
+  apiurl = 'http://localhost:4000/student';
   constructor(private http: HttpClient) {}
 
   getAllStudents(): Observable<ApiResponse<IStudent[]>> {
